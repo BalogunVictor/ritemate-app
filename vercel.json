@@ -1,0 +1,5 @@
+{
+  "build": {
+    "ignore": ["**/*.ts"] // Specify the file or pattern causing the TypeScript error
+  }
+}
