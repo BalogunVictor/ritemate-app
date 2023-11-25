@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
 
-const buttonstyle = cva('rounded', {
+const buttonstyle = cva('h-10 w-full rounded-full  text-base', {
   defaultVariants: {
     size: 'sm',
     variants: 'primary',
@@ -12,8 +12,9 @@ const buttonstyle = cva('rounded', {
       sm: 'p-2',
     },
     variants: {
-      primary: 'bg-blue-500 text-white hover:bg-blue-600',
-      secondary: 'border border-gray-100 hover:bg-gray-100',
+      primary: 'bg-[#17478F] text-white',
+      secondary: 'bg-[#12A8AC] text-white',
+      tertiary: 'bg-yellow-500 text-black',
     },
   },
 });

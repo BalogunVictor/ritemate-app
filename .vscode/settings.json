@@ -17,5 +17,6 @@
       "classnames\\(([^)]*)\\)",
       "'([^']*)'"
     ]
-  ]
+  ],
+  "cSpell.words": ["Paystack"]
 }
