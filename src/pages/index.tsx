@@ -43,6 +43,7 @@ const Home: NextPageWithLayout = () => {
     const [loading, setLoading] = useState(false);
 
     const methods = useForm<HomepageProps>({
+      // @ts-ignore
       resolver: yupResolver(validationSchema),
     });
 

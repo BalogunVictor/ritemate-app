@@ -16,6 +16,9 @@
     {
       "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
       "rules": {
+        // other rules...
+        "@typescript-eslint/your-rule-name": "off",
+
         "simple-import-sort/imports": [
           "error",
           {

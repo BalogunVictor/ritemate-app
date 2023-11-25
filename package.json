@@ -17,6 +17,18 @@
     "prepare": "husky install",
     "pre-commit": "yarn lint"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tsc --noEmit",
+      "next lint",
+      "prettier --check ./**/*.{ts,tsx}"
+    ]
+  },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
     "@hookform/resolvers": "^3.3.2",
